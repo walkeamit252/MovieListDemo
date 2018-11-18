@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#333544</color>
+    <color name="colorAccent">#2C2F44</color>
+
+    <color name="color_Blue">#2C2F44</color>
+
+    <color name="toolbar_color">#333544</color>
+
+    <color name="color_black">#101010</color>
+    <color name="color_gray_dark">#c3c3c3</color>
+     <color name="color_gray_light">#ebebeb</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black_supplier_opacity">#80AFAFAF</color>
+    <color name="color_black_supplier">#3e3e3e</color>
+
+    <color name="default_color_gray">#808080</color>
+
+    <color name="color_divider_opacity_50">#80979797</color>
+
+        
+</resources>

@@ -1,0 +1,95 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--<style name="TextLabel" parent="Widget.Design.TextInputLayout">-->
+        <!--<item name="android:textColorHint">@color/color_gray_dark</item>-->
+        <!--<item name="colorAccent">@color/color_gray_dark</item>-->
+        <!--<item name="android:textColor">@color/color_black</item>-->
+        <!--<item name="android:textSize">@dimen/dimen_20sp</item>-->
+        <!--<item name="android:padding">@dimen/dimen_3dp</item>-->
+        <!--<item name="colorControlNormal">@color/color_divider_opacity_50</item>-->
+        <!--<item name="colorControlActivated">@color/colorPrimary</item>-->
+        <!--<item name="colorControlHighlight">@color/colorPrimary</item>-->
+    <!--</style>-->
+
+    <!--<style name="TextLabel1" parent="Widget.Design.TextInputLayout">-->
+        <!--<item name="android:textColorHint">@color/color_blue_circle</item>-->
+        <!--<item name="colorAccent">@color/color_Blue</item>-->
+        <!--<item name="android:textColor">@color/color_days</item>-->
+        <!--<item name="android:textSize">@dimen/dimen_16sp</item>-->
+        <!--<item name="android:paddingTop">@dimen/dimen_3dp</item>-->
+        <!--<item name="android:paddingBottom">@dimen/dimen_3dp</item>-->
+        <!--<item name="android:paddingEnd">@dimen/dimen_3dp</item>-->
+
+    <!--</style>-->
+
+    <!--<style name="LabelHighlight" parent="Widget.Design.TextInputLayout">-->
+        <!--<item name="android:textColorHint">@color/black_opacity_50</item>-->
+        <!--<item name="colorAccent">@color/color_divider_opacity_50</item>-->
+        <!--<item name="android:textColor">@color/color_black</item>-->
+        <!--<item name="colorControlNormal">@color/color_divider_opacity_50</item>-->
+        <!--<item name="colorControlActivated">@color/colorPrimary</item>-->
+        <!--<item name="colorControlHighlight">@color/colorPrimary</item>-->
+    <!--</style>-->
+
+    <!--<style name="TextLabelMyAccount" parent="Widget.Design.TextInputLayout">-->
+        <!--<item name="android:textColorHint">@color/color_gray_dark</item>-->
+        <!--<item name="colorAccent">@color/color_gray_dark</item>-->
+        <!--<item name="android:textColor">@color/color_black</item>-->
+        <!--<item name="android:textSize">@dimen/dimen_16sp</item>-->
+        <!--<item name="android:padding">@dimen/dimen_3dp</item>-->
+        <!--<item name="colorControlNormal">@color/color_divider_opacity_50</item>-->
+        <!--<item name="colorControlActivated">@color/colorPrimary</item>-->
+        <!--<item name="colorControlHighlight">@color/colorPrimary</item>-->
+    <!--</style>-->
+
+ <!---->
+
+    <!--<style name="style_textview_common">-->
+        <!--<item name="android:padding">@dimen/dimen_15dp</item>-->
+        <!--<item name="android:textColor">@color/color_black</item>-->
+    <!--</style>-->
+
+    <!--<style name="style_textview_crop">-->
+        <!--<item name="android:padding">@dimen/dimen_5dp</item>-->
+        <!--<item name="android:layout_margin">@dimen/dimen_3dp</item>-->
+        <!--<item name="android:textColor">@color/color_white</item>-->
+        <!--<item name="android:layout_weight">1</item>-->
+        <!--<item name="android:gravity">center</item>-->
+    <!--</style>-->
+
+    <!--<style name="ToolbarColoredBackArrow" parent="AppTheme">-->
+        <!--<item name="android:textColorSecondary">@android:color/white</item>-->
+    <!--</style>-->
+
+
+
+
+
+
+    <!--<style name="LabelHighlightSize" parent="TextAppearance.Design.Hint">-->
+        <!--<item name="android:textSize">@dimen/dimen_13dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">-->
+        <!--<item name="colorAccent">@color/colorPrimary</item>-->
+    <!--</style>-->
+
+
+
+</resources>

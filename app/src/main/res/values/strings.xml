@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MoviesPromotion</string>
+    <string name="list_displayed">Movies list displayed.</string>
+    <string name="network_not_available">Please Check internet Connection.</string>
+</resources>

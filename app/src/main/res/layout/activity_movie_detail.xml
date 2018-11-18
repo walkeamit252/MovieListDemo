@@ -1,0 +1,332 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_color">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="35dp"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/ic_left_arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Movie Details"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/dimen_16sp"
+                android:padding="@dimen/dimen_5dp"
+                app:layout_constraintStart_toStartOf="@id/ivBack"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/color_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scrollbars="none">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivPosterImage"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_launcher_background" />
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/ivBackImage"
+                android:layout_width="@dimen/dimen_120dp"
+                android:layout_height="@dimen/dimen_120dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:src="@drawable/background_shape"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivPosterImage"/>
+
+
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/dimen_14sp"
+                android:visibility="visible"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivBackImage"
+
+                />
+            <TextView
+                android:id="@+id/tvLanguage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/dimen_14sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDescription"
+
+                />
+            <TextView
+                android:id="@+id/tvPopularity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/dimen_14sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLanguage"/>
+            <TextView
+                android:id="@+id/tvReleasedate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/dimen_14sp"
+                android:padding="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPopularity"
+                />
+            <TextView
+                android:id="@+id/tvRevenue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/dimen_14sp"
+                android:padding="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvReleasedate"
+                android:paddingBottom="@dimen/dimen_16dp"
+                />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/main_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/appbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+        <!--<android.support.design.widget.CollapsingToolbarLayout-->
+            <!--android:id="@+id/collapsing_toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:layout_collapseMode="pin">-->
+
+
+            <!--<android.support.design.widget.TabLayout-->
+                <!--android:id="@+id/tabLayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:background="@color/color_Blue"-->
+                <!--app:layout_collapseMode="pin"-->
+                <!--app:layout_scrollFlags="scroll|enterAlways"-->
+                <!--app:tabGravity="fill"-->
+                <!--app:tabIndicatorHeight="0dp"-->
+                <!--app:tabMode="fixed" />-->
+
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="?attr/actionBarSize"-->
+                <!--android:background="@color/color_Blue">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/ivBack"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--app:srcCompat="@drawable/ic_left_arrow"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvTitle"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="Movie Details"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="@dimen/dimen_16sp"-->
+                        <!--android:padding="@dimen/dimen_5dp"/>-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.Toolbar>-->
+
+
+        <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+        <!--android:background="@color/color_white"-->
+        <!--android:scrollbars="none">-->
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+
+        <!--android:padding="@dimen/dimen_10dp"-->
+        <!--&gt;-->
+
+        <!--&lt;!&ndash;&ndash;&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/ivPosterImage"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="160dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:padding="@dimen/dimen_5dp"-->
+            <!--android:layout_marginTop="@dimen/dimen_5dp"-->
+           <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvDescription"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/dimen_5dp"-->
+            <!--android:layout_marginTop="@dimen/dimen_5dp"-->
+            <!--android:textColor="@color/color_black"-->
+            <!--android:textSize="@dimen/dimen_14sp"-->
+            <!--android:visibility="visible" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/tvLanguage"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/dimen_5dp"-->
+            <!--android:layout_marginTop="@dimen/dimen_5dp"-->
+            <!--android:textColor="@color/color_black"-->
+            <!--android:textSize="@dimen/dimen_14sp"-->
+            <!--android:visibility="visible" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/tvPopularity"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/dimen_5dp"-->
+            <!--android:layout_marginTop="@dimen/dimen_5dp"-->
+            <!--android:textColor="@color/color_black"-->
+            <!--android:textSize="@dimen/dimen_14sp"-->
+            <!--android:visibility="visible" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/tvReleasedate"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/color_black"-->
+            <!--android:textSize="@dimen/dimen_14sp"-->
+            <!--android:padding="@dimen/dimen_5dp"-->
+            <!--android:layout_marginTop="@dimen/dimen_5dp"-->
+            <!--android:visibility="visible" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/tvRevenue"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/color_black"-->
+            <!--android:textSize="@dimen/dimen_14sp"-->
+            <!--android:padding="@dimen/dimen_5dp"-->
+            <!--android:layout_marginTop="@dimen/dimen_5dp"-->
+            <!--android:visibility="visible" />-->
+
+        <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+            <!--android:id="@+id/ivBackImage"-->
+            <!--android:layout_width="@dimen/dimen_120dp"-->
+            <!--android:layout_height="@dimen/dimen_120dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:layout_marginTop="@dimen/dimen_5dp"-->
+            <!--android:src="@drawable/background_shape"-->
+            <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+<!--</android.support.design.widget.CoordinatorLayout>-->
+
+
